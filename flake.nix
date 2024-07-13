@@ -14,20 +14,13 @@
       in {
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
-            # scala
-            sbt
-            temurin-bin-17
-            metals
-            mill
-            bloop
-            # c++
-            # rocmPackages.llvm.clang-tools-extra
-            verilator
             # utils
             qemu
             (with pkgsCross.riscv64; [ glib.stdenv.cc buildPackages.gdb ])
-            yosys
-            verible
+            # C++
+            clang
+            llvm_16
+            
           ];
         };
       });
