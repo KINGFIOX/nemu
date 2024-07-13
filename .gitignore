@@ -9,5 +9,6 @@
 !README.md
 !Kconfig
 !flake.nix
+!flake.lock
 include/config
 include/generated
