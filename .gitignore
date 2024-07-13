@@ -8,5 +8,6 @@
 !.gitignore
 !README.md
 !Kconfig
+!flake.nix
 include/config
 include/generated
